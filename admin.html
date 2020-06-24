@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="css/admin.css" />
+		<script src="js/admin.js"></script>
+		<title>BookShop</title>
+	</head>
+
+	<body onload="administrator();">
+		<div class="content">
+			<!-- Bara de meniu -->
+			<div class="topnav">
+				<a href="menu.html"
+					><img
+						src="https://www.acel.org.au/ACEL/images/ACEL/Website%20Collateral/Books/2018/Bookshop-Logo.png"
+						alt="Logo"
+						class="logo"
+				/></a>
+				<div class="align-right">
+					<a href="admin.html"
+						><img
+							src="https://www.edituragama.ro/skin/frontend/rwd/default/images/icon-contul-meu.png"
+							class="adminIcon"
+							alt="Admin"
+					/></a>
+				</div>
+			</div>
+			<button class="add-book" onclick="addNewBook()">Add book</button>
+			<div class="new-book-box hidden">
+				<div id="show-box">
+					<div class="wpr_admin">
+						<button id="edit-btn" class="hidden" onclick="editThisBook(event)">
+							Edit
+						</button>
+						<button id="save-btn" class="hidden" onclick="saveMe()">
+							Save
+						</button>
+						<button id="cancel-btn" onclick="notNow()">
+							Cancel
+						</button>
+					</div>
+
+					<div id="new-book">
+						<div>
+							<p>Imagine</p>
+							<input type="text" id="image" />
+						</div>
+						<div>
+							<p>Nume carte:</p>
+							<input type="text" id="name" />
+						</div>
+						<div>
+							<p>Autor</p>
+							<input type="text" id="author" />
+						</div>
+
+						<div>
+							<p>Pret</p>
+							<input type="number" id="price" />
+						</div>
+
+						<div>
+							<p>Stoc</p>
+							<input type="number" id="stock" />
+						</div>
+
+						<div>
+							<p>Descriere</p>
+							<textarea
+								cols="30"
+								rows="10"
+								style="width: 70%;"
+								id="description"
+							></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="AdminTable">
+				<table id="tableBooks">
+					<thead>
+						<tr>
+							<th>Imagine</th>
+							<th>Nume carte</th>
+							<th>Autor</th>
+							<th>Pret</th>
+							<th>Stoc</th>
+							<th>Descriere</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+
+					<tbody class="showBooks"></tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
