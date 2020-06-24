@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Aref Ruqaa"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="css/grid.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+		<script src="js/cart.js" defer></script>
+		<title>Cart</title>
+	</head>
+	<body onload="showCart()">
+		<div class="content">
+			<!-- Bara de meniu -->
+			<div class="topnav">
+				<a href="menu.html"
+					><img
+						src="https://www.acel.org.au/ACEL/images/ACEL/Website%20Collateral/Books/2018/Bookshop-Logo.png"
+						alt="Logo"
+						class="logo"
+				/></a>
+				<div class="align-right">
+					<a href="cart.html">
+						<img
+							src="https://www.edituragama.ro/skin/frontend/rwd/default/images/icon-cart.png"
+							alt="Cart"
+							class="cartIcon"
+					/></a>
+					<a href="admin.html"
+						><img
+							src="https://www.edituragama.ro/skin/frontend/rwd/default/images/icon-contul-meu.png"
+							class="adminIcon"
+							alt="Admin"
+					/></a>
+					<br />
+				</div>
+			</div>
+			<div>
+				<a href="menu.html"><button>Continua cumparaturile</button></a>
+			</div>
+
+			<!-- Loader -->
+			<div class="sk-cube-grid">
+				<div class="sk-cube sk-cube1"></div>
+				<div class="sk-cube sk-cube2"></div>
+				<div class="sk-cube sk-cube3"></div>
+				<div class="sk-cube sk-cube4"></div>
+				<div class="sk-cube sk-cube5"></div>
+				<div class="sk-cube sk-cube6"></div>
+				<div class="sk-cube sk-cube7"></div>
+				<div class="sk-cube sk-cube8"></div>
+				<div class="sk-cube sk-cube9"></div>
+			</div>
+
+			<div id="cartContent" class="hidden"></div>
+
+			<div id="sideContent">
+				<div>Total: <span id="totalTotal"></span></div>
+				<div class="finalTouch">
+					<button class="final">Spre finalizare</button>
+				</div>
+			</div>
+
+			<footer>
+				<div class="footer">
+					<img src="image/facebook.svg" class="footerImage" />
+					<img src="image/instagram.svg" class="footerImage" />
+					<img src="image/twitter.svg" class="footerImage" />
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
