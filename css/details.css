@@ -1,0 +1,86 @@
+body {
+	margin: 0 auto;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+.content {
+	margin: 0 3%;
+}
+
+/* loader */
+.hidden {
+	display: none;
+}
+
+/* Bara meniului */
+.topnav {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.align-right {
+	float: right;
+}
+.topnav a {
+	float: left;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+}
+
+.logo {
+	height: 50px;
+	float: left;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+.cartIcon {
+	height: 40px;
+	margin-right: 25px;
+}
+
+/* continut */
+.hide {
+	display: none;
+}
+.message {
+	margin-top: 50px;
+}
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+image {
+	margin-right: 30px;
+}
+
+#quantity {
+	width: 50px;
+	height: 20px;
+}
+button {
+	background: #c3f0ca;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+/* footer */
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #c9ebb6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footerImage {
+	margin-left: 30px;
+	width: 30px;
+}
